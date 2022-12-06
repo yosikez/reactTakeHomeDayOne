@@ -1,23 +1,35 @@
+:root {
+  --color1 : #349DE2;
+  --color2 : white;
+  --color3 : #282c34;
+}
+
+html {
+  color: var(--color3);
+}
+
 .App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  background-color: var(--color3);
+  min-height: 100vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 3s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -28,6 +40,63 @@
   color: #61dafb;
 }
 
+.Todo-add {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  border-radius: 25px;
+  background-color: var(--color1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  grid-gap: 20px;
+  margin: 30px;
+}
+
+.Todo {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+  grid-gap: 10px;
+  width: 60%;
+}
+
+.Todo span {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: left;
+  background-color: var(--color2);
+  border-radius: 10px;
+  width: 95%;
+  padding-left: 10px;
+}
+
+.Button-action {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+}
+
+.card h1 {
+  background-color: var(--color2);
+  border-radius: 15px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

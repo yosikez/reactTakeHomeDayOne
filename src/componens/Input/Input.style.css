@@ -1,0 +1,14 @@
+.Form-input {
+    display: flex;
+    color: white;
+}
+
+.input {
+    border-radius: 15px;
+    border: 0;
+    font-size: 25px;
+    padding: 5px;
+    width: auto;
+    outline: none;
+    color: var(--color3);
+}

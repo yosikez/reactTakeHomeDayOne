@@ -1,0 +1,15 @@
+button {
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    width: calc(50px);
+    font-size: 20px;
+    color: var(--color1);
+    background-color: var(--color2);
+}
+
+button:hover {
+    color: var(--color2);
+    background-color: var(--color1);
+    border: 2px solid var(--color2);
+}
